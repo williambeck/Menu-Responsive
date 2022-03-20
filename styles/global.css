@@ -1,0 +1,166 @@
+/* ## Para todas as Paginas ## */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+
+* {
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'roboto', sans-serif;
+  
+}
+
+body{
+  background-color: #141b29 ;
+
+}
+
+/* ## esta no layout do Menu  ## */
+
+.max-width{ 
+  max-width: 1300px; /* maximo de largura*/
+  padding: 0 10px; /*0 na parte superior/inferior e 10px nas lateriais*/
+  margin: auto; /*centralizado*/
+}
+.navbar .logo a{  /*logo + link a*/
+  color: #fff; /*Cor da font*/
+  font-size: 35px; /*tamanho da font*/
+  font-weight: 500; /*Largura da font*/
+}
+.navbar{
+  position: fixed; /*posição*/
+  width: 100%; /*largura*/
+  z-index: 999; /**/
+  padding: 20px 0; /*20px na laterial superior/inferior e 0 nas laterias*/
+  font-family: 'ubuntu', sans-serif; /*font do menu*/
+  background-color: #000; /*cor da largura do menu*/
+  border-bottom: solid #f6f6f8 2px; /*borda abaixo do menu*/
+  
+}
+.navbar .max-width{
+  display: flex; 
+  align-items: center; /*centralizando os elementos */
+  justify-content: space-between; /*distribui os items uniformemente*/
+}
+.navbar .menu li{
+  list-style: none; /*retira os circulos da lista*/
+  display: inline-flex; /*deixa tudo em uma unica linha*/
+}
+.navbar .menu li a{
+  display: block;
+  color: #fff; /*cor da font*/
+  font-size: 18px; /*tamanho da font*/
+  font-weight: 400; /*largura da font*/
+  margin-left: 25px; /*margem a esquerda um item do outro*/
+}
+.menu-btn{
+  color: #fff;
+  font-size: 23px;
+  cursor: pointer;
+  display: none;
+}
+
+/* ## PARA DISPOSITIVO MOVEL ## */
+@media (max-width: 947px){
+  .menu-btn{
+      display: block;
+      z-index: 999;
+  }
+  .menu-btn i.active:before{
+      
+      content: "\f00d";
+  }
+  .navbar .menu{
+    
+      background-color: rgb(247, 99, 45);
+      position: fixed;
+      height: 100vh;
+      width: 100%;
+      left: -100%;
+      top: 0;
+      text-align: center;
+      padding-top: 80px;
+      transition: all 0.3s ease;
+  }
+  .navbar .menu.active{
+      left: 0;
+  }
+  .navbar .menu li{
+      display: block;
+  }
+  .navbar .menu li a{
+      display: inline-block;
+      margin: 13px 0;
+      font-size: 25px;
+  }
+  .max-width{
+      max-width: 930px;
+  }
+}
+/* ## HOME ## */
+
+section {
+  padding: 50px 0; /*80px na laterial superior/inferior e 0 nas laterias*/
+}
+
+@media(max-width: 690px){
+    section{
+        padding: 20px 0; }} /*20px na laterial superior/inferior e 0 nas laterias*/
+   
+
+  .top{
+    color: #fff; /*cor da font*/
+    display: flex;
+    background: url("../public/Conexao.jpg");
+    opacity: 1;
+    
+    
+    height: 100vh; /*personalizar a imagem 100% da tela*/
+    min-height: 500px; /*altura minima da imagem*/
+    background-size: cover; /*ajusta a imagem para nao esticar a imagem*/
+    background-attachment: fixed;/*deixa a imagem fixa */
+    font-size: 50px;
+    font-family: "roboto", sans-serif;
+    font-style: normal;
+  
+  }
+
+  .top .max-width{
+     width: 100%;
+     display: flex;
+  }
+  .top .top-content .text-1{ 
+    font-size: 45px; 
+    font-weight: 300;
+    color: #fff;
+  }
+  .top .top-content .text-2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-left: 0px;    
+  }
+  .top .top-content .text-3{
+    font-size: 32px;
+    margin: 5px 0;
+  }
+
+  .top .top-content a{
+    display:inline-block;
+    background-color: rgb(247, 99, 45);
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    font-weight: 300;
+    border-radius: 6px;
+    border: 2px solid #fff;;
+    transition: all 0.3s ease;
+  
+  }
+  .top .top-content a:hover {
+    color: #fff;
+    background: none;
+  }
+
