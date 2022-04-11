@@ -74,7 +74,7 @@ body{
   }
   .navbar .menu{
     
-      background-color: rgb(247, 99, 45);
+      background-color: #141b29 ;
       position: fixed;
       height: 100vh;
       width: 100%;
@@ -148,7 +148,7 @@ section {
 
   .top .top-content a{
     display:inline-block;
-    background-color: rgb(247, 99, 45);
+    background-color: #141b29 ;
     color: #fff;
     font-size: 25px;
     padding: 12px 36px;
